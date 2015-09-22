@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+       Copyright (C) 2015 Haruki Hasegawa
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+           http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+-->
+<manifest
+    package="com.h6ah4i.android.example.advrecyclerview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk tools:overrideLibrary="com.wnafee.vector"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".launcher.MainActivity"
+            android:label="@string/activity_title_launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".demo_d.DraggableExampleActivity"
+            android:label="@string/activity_title_demo_d" />
+
+        <activity
+            android:name=".demo_d_with_longpress.DraggableWithLongPressExampleActivity"
+            android:label="@string/activity_title_demo_d_with_longpress" />
+
+        <activity
+            android:name=".demo_s.SwipeableExampleActivity"
+            android:label="@string/activity_title_demo_s" />
+
+        <activity
+            android:name=".demo_us.UnderSwipeableExampleActivity"
+            android:label="@string/activity_title_demo_us" />
+
+        <activity
+            android:name=".demo_e.ExpandableExampleActivity"
+            android:label="@string/activity_title_demo_e" />
+
+        <activity
+            android:name=".demo_ds.DraggableSwipeableExampleActivity"
+            android:label="@string/activity_title_demo_ds" />
+
+        <activity
+            android:name=".demo_eds.ExpandableDraggableSwipeableExampleActivity"
+            android:label="@string/activity_title_demo_eds" />
+
+        <activity
+            android:name=".demo_d_with_section.DraggableWithSectionExampleActivity"
+            android:label="@string/activity_title_demo_d_with_section" />
+
+        <activity
+            android:name=".demo_ed_with_section.ExpandableDraggableWithSectionExampleActivity"
+            android:label="@string/activity_title_demo_ed_with_section" />
+
+        <activity
+            android:name=".demo_e_add_remove.AddRemoveExpandableExampleActivity"
+            android:label="@string/activity_title_demo_e_add_remove" />
+
+        <activity
+            android:name=".about.AboutActivity"
+            android:label="@string/activity_title_about"/>
+    </application>
+
+</manifest>
